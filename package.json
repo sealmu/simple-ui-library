@@ -1,0 +1,23 @@
+{
+  "name": "@mprestcom/simple-ui-library",
+  "version": "1.0.4",
+  "main": "dist/simple-ui-library.umd.js",
+  "module": "dist/simple-ui-library.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "dist/types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build:js": "vite build",
+    "build": "npm run build:js && npm run build:types",
+    "prepare": "npm run build"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
